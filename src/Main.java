@@ -22,7 +22,7 @@ public class Main {
             balanceAccount1 = bank1.retrieveAccount(accountID1).getBalance();
             System.out.printf("Balance: $%12.2f\n", balanceAccount1);
 
-            System.out.println("\nAccount as string: \n" + bank1.retrieveAccount(accountID1).toString());
+//            System.out.println("\nAccount as string: \n" + bank1.retrieveAccount(accountID1).toString());
         }catch (NullPointerException e){
             System.out.println("The account could not be successfully retrieved, Terminating program.");
         }
