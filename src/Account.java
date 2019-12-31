@@ -11,9 +11,10 @@ public class Account{
         accountNumber = UUID.randomUUID();
     }
 
+    //Provides account info
     @Override
     public String toString() {
-        return super.toString();
+        return String.format("\tOwner: %16s\n\tBalance: $ %12.2f\n\tID: %s", owner, balance, accountNumber.toString());
     }
 
     public boolean equals(UUID accountNumber){
